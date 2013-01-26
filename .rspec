@@ -1,0 +1,2 @@
+--color
+--pattern "spec/classes/**/*_spec.rb"

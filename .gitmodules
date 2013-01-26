@@ -1,0 +1,6 @@
+[submodule "spec/fixtures/modules/apt"]
+	path = spec/fixtures/modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
+[submodule "spec/fixtures/modules/stdlib"]
+	path = spec/fixtures/modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
