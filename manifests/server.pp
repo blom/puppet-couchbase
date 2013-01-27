@@ -1,6 +1,6 @@
 # couchbase::server
 class couchbase::server(
-  $package_ensure = installed
+  $package_ensure = present
 ) {
   include couchbase::params
   require couchbase::repository
