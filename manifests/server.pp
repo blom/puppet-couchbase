@@ -1,7 +1,8 @@
 # couchbase::server
 class couchbase::server(
   $package_ensure = present,
-  $service_enable = true
+  $service_enable = true,
+  $service_ensure = undef
 ) {
   include couchbase::params
   require couchbase::repository
@@ -11,6 +12,8 @@ class couchbase::server(
   }
 
   service { $couchbase::params::server_service_name:
-    enable => $service_enable,
+    ensure  => $service_ensure,
+    enable  => $service_enable,
+    require => Package[$couchbase::params::server_package_name],
   }
 }
