@@ -5,10 +5,11 @@ class couchbase::server(
   $service_ensure = undef
 ) {
   include couchbase::params
-  require couchbase::repository
+  include couchbase::repository
 
   package { $couchbase::params::server_package_name:
-    ensure => $package_ensure,
+    ensure  => $package_ensure,
+    require => Class['couchbase::repository'],
   }
 
   service { $couchbase::params::server_service_name:
