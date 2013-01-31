@@ -1,5 +1,5 @@
 name "blom-couchbase"
-version "0.0.0"
+version "0.0.1"
 author "Ørjan Blom"
 project_page "https://github.com/blom/puppet-couchbase"
 source "https://github.com/blom/puppet-couchbase"
