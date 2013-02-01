@@ -9,6 +9,7 @@ describe "couchbase::server" do
   it { should contain_service("couchbase-server").
               without_ensure.
               with_enable(true).
+              with_hasrestart(true).
               with_require(/\APackage\[couchbase-server\]/) }
 
   context "when package_ensure is 'absent'" do
@@ -28,6 +29,7 @@ describe "couchbase::server" do
     it { should contain_service("couchbase-server").
                 with_ensure("running").
                 with_enable(true).
+                with_hasrestart(true).
                 with_require(/\APackage\[couchbase-server\]/) }
   end
 end
