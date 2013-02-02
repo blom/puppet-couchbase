@@ -12,6 +12,11 @@ Currently only confirmed to work on Ubuntu 10.04 LTS; waiting for
 [repositories](http://www.couchbase.com/issues/browse/MB-6972) to become
 available.
 
+Installation
+------------
+
+    puppet module install blom/couchbase
+
 Usage
 -----
 
