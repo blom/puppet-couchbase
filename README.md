@@ -27,11 +27,21 @@ Installs the Couchbase client library.
     class { 'couchbase':
     }
 
+Takes the following optional attributes:
+
+* `package_ensure`: The `ensure` passed to `package` (default: `present`).
+
 ### couchbase::server
 
 Installs the Couchbase server.
 
     class { 'couchbase::server':
     }
+
+Takes the following optional attributes:
+
+* `package_ensure`: The `ensure` passed to `package` (default: `present`).
+* `service_enable`: The `enable` passed to `service` (default: `true`).
+* `service_ensure`: The `ensure` passed to `service` (default: `undef`).
 
 [1]: http://www.couchbase.com/
