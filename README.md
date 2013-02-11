@@ -1,7 +1,7 @@
 puppet-couchbase
 ================
 
-[![Build Status](https://secure.travis-ci.org/blom/puppet-couchbase.png)](https://travis-ci.org/blom/puppet-couchbase)
+[![Build Status](https://travis-ci.org/blom/puppet-couchbase.png)](https://travis-ci.org/blom/puppet-couchbase)
 
 * [Homepage](https://github.com/blom/puppet-couchbase)
 * [Puppet Forge](https://forge.puppetlabs.com/blom/couchbase)
