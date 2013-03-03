@@ -31,6 +31,28 @@ Takes the following optional attributes:
 
 * `package_ensure`: The `ensure` passed to `package` (default: `present`).
 
+### couchbase::dev
+
+Installs the Couchbase development files.
+
+    class { 'couchbase::dev':
+    }
+
+Takes the following optional attributes:
+
+* `package_ensure`: The `ensure` passed to `package` (default: `present`).
+
+### couchbase::ruby
+
+Installs the Couchbase Ruby client library.
+
+    class { 'couchbase::ruby':
+    }
+
+Takes the following optional attributes:
+
+* `package_ensure`: The `ensure` passed to `package` (default: `present`).
+
 ### couchbase::server
 
 Installs the Couchbase server.
