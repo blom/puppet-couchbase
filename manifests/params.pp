@@ -5,7 +5,7 @@ class couchbase::params {
   $server_service_name = 'couchbase-server'
 
   $dev_package_name = $::operatingsystem ? {
-    /(?i:centos|fedora|redhat|scientific)/ => 'libcouchbase-devel',
-    default                                => 'libcouchbase-dev',
+    /(?i:centos|redhat|scientific)/ => 'libcouchbase-devel',
+    default                         => 'libcouchbase-dev',
   }
 }
