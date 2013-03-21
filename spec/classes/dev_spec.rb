@@ -8,6 +8,7 @@ describe "couchbase::dev" do
 
   it { should include_class "couchbase::params" }
   it { should include_class "couchbase::repository" }
+
   it { should contain_package("libcouchbase-dev").
               with_ensure("present").
               with_require(/\AClass\[Couchbase::Repository\]/) }

@@ -3,6 +3,7 @@ require "spec_helper"
 describe "couchbase::ruby" do
   it { should include_class "couchbase::params" }
   it { should include_class "couchbase::dev" }
+
   it { should contain_package("couchbase").
               with_ensure("present").
               with_provider("gem").
