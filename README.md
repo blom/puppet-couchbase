@@ -64,4 +64,10 @@ Takes the following optional attributes:
 * `service_enable`: The `enable` passed to `service` (default: `true`).
 * `service_ensure`: The `ensure` passed to `service` (default: `undef`).
 
+Contributors
+------------
+
+See the [contributors page][2] for a list of contributors.
+
 [1]: http://www.couchbase.com/
+[2]: https://github.com/blom/puppet-couchbase/contributors
