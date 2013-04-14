@@ -62,8 +62,9 @@ Takes the following optional attributes:
 * `service_enable`: The `enable` passed to `service` (default: `true`).
 * `service_ensure`: The `ensure` passed to `service` (default: `undef`).
 
-The server class is considered unstable as Couchbase's preferred way of
-distributing Couchbase server seems to be direct download of the package.
+The repositories for Couchbase server is
+[a work in progress](http://www.couchbase.com/issues/browse/MB-6972) and
+`couchbase::server` is considered experimental.
 
 Contributors
 ------------
