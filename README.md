@@ -8,8 +8,6 @@ puppet-couchbase
 
 Puppet module for [Couchbase][1].
 
-Currently only confirmed to work on Ubuntu 10.04 LTS.
-
 Installation
 ------------
 
@@ -63,6 +61,9 @@ Takes the following optional attributes:
 * `package_ensure`: The `ensure` passed to `package` (default: `present`).
 * `service_enable`: The `enable` passed to `service` (default: `true`).
 * `service_ensure`: The `ensure` passed to `service` (default: `undef`).
+
+The server class is considered unstable as Couchbase's preferred way of
+distributing Couchbase server seems to be direct download of the package.
 
 Contributors
 ------------
