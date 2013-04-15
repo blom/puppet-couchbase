@@ -5,8 +5,9 @@ class couchbase::ruby(
   include couchbase::params
   include couchbase::dev
 
-  package { 'couchbase':
+  package { 'couchbase_ruby':
     ensure   => $package_ensure,
+    name     => 'couchbase',
     provider => 'gem',
     require  => Class['couchbase::dev'],
   }
