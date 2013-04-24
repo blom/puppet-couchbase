@@ -62,7 +62,7 @@ Takes the following optional attributes:
 * `service_enable`: The `enable` passed to `service` (default: `true`).
 * `service_ensure`: The `ensure` passed to `service` (default: `undef`).
 
-The repositories for Couchbase server is
+The repositories for Couchbase server is currently (2013-04-24)
 [a work in progress](http://www.couchbase.com/issues/browse/MB-6972) and
 `couchbase::server` is considered experimental.
 
