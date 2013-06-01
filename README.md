@@ -38,6 +38,17 @@ Takes the following optional attributes:
 
 * `package_ensure`: The `ensure` passed to `package` (default: `present`).
 
+### couchbase::python
+
+Installs the Couchbase Python client library.
+
+    class { 'couchbase::python':
+    }
+
+Takes the following optional attributes:
+
+* `package_ensure`: The `ensure` passed to `package` (default: `present`).
+
 ### couchbase::ruby
 
 Installs the Couchbase Ruby client library.
