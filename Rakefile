@@ -4,6 +4,7 @@ require "puppet-lint/tasks/puppet-lint"
 
 CLOBBER.include %w(.yardoc doc pkg)
 PuppetLint.configuration.ignore_paths = %w(spec/fixtures/**/*.pp)
+PuppetLint.configuration.disable_autoloader_layout
 
 task :default => ["submodules:init", :spec, :lint]
 
