@@ -11,7 +11,13 @@ Puppet module for [Couchbase][1].
 Installation
 ------------
 
+### Puppet Forge
+
     puppet module install blom/couchbase
+
+### Puppetfile
+
+    mod "couchbase", :git => "https://github.com/blom/puppet-couchbase.git"
 
 Usage
 -----
